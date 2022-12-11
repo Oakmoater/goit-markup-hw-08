@@ -1,5 +1,5 @@
 .subscription-form {
-    margin-left: 93px;
+    // margin-left: 93px;
 
     &_caption {
         display: block;
@@ -14,29 +14,32 @@
     // }
 
     &_input {
-        display: block;
-        width: 350px;
+        display: inline-block;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         cursor: pointer;
-        padding-left: 16px;
+        // padding-left: 16px;
         background: #2F303A;
         color: var(--akcent-text-color);
         transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        width: 450px;
+        margin-bottom: 20px;
     }
     &_input:hover,
     &_input:focus {
         outline: 1px solid var(--akcent-color);
     }
     &_button {
-        display: flex;
+        display: inline-flex;
+
         justify-content: center;
         align-items: center;
         width: 200px;
         height: 50px;
-        margin-left: 20px;
+        // margin-left: 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border: none;

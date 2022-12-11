@@ -3,10 +3,11 @@
     padding: 60px 0;
 }
 
-// .footer_section {
-//     display: flex;
-//     align-items: baseline;
-// }
+.footer_section {
+    // display: flex;
+    // align-items: baseline;
+    text-align: center;
+}
 
 // logo
 
@@ -48,7 +49,11 @@
 
 .footer-socials {
     box-sizing: border-box;
-    margin-left: 70px;
+    
+    margin-bottom: 60px;
+    margin-top: 60px;
+    
+    // margin-left: 70px;
 }
 .footer-social_tabs{
     display: flex;
