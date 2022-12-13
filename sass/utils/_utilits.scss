@@ -24,6 +24,9 @@ body {
     color: var(--text-color-primary);
     margin: 0;
 }
+body.menu_open{
+    overflow: hidden;
+}
 img {
     display: block;
     max-width: 100%;
