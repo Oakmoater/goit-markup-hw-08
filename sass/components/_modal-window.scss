@@ -147,7 +147,7 @@
 }
 
 .checkbox-icon {
-    display: inline-block;
+    flex-shrink: 0;
     width: 16px;
     height: 15px;
     border: 1.8px solid var(--text-color);
