@@ -69,7 +69,13 @@ img {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.6;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    line-height: 1.6;
+    font-size: 26px;
+  }
 }
 
 :root {
@@ -93,9 +99,26 @@ img {
 
 .logo--header {
   color: var(--text-color);
-  margin-right: 93px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+}
+@media screen and (max-width: 767px) {
+  .logo--header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo--header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo--header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .logo-text {
@@ -109,7 +132,7 @@ img {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .header_box {
     justify-content: space-between;
   }
@@ -154,15 +177,26 @@ img {
   background: #2196F3;
   border-radius: 2px;
 }
-.header-contakts {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-left: auto;
-}
 @media screen and (max-width: 767px) {
   .header-contakts {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-contakts {
+    display: flex;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: 97px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 156px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contakts {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .header-contakts_item {
@@ -170,8 +204,15 @@ img {
   justify-content: center;
   align-content: center;
 }
-.header-contakts_item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .header-contakts_item:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contakts_item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 .header-contakts_link {
   font-weight: 500;
@@ -202,6 +243,9 @@ img {
     outline: none;
     cursor: pointer;
     margin-right: -10px;
+  }
+  .menu_open-btn:hover, .menu_open-btn:focus {
+    fill: var(--akcent-btn-color);
   }
 }
 
@@ -833,6 +877,9 @@ img {
   outline: none;
   cursor: pointer;
 }
+.menu_close-btn:hover, .menu_close-btn:focus {
+  fill: var(--akcent-btn-color);
+}
 .menu-nav_item {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -885,12 +932,17 @@ img {
   row-gap: 10px;
   margin-top: 64px;
 }
+.menu-socials_item {
+  padding: 10px;
+}
 .menu-socials_item:not(:first-child) {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
+.menu-socials_item:first-child {
+  padding-left: 0;
+}
 .menu-socials_link {
   color: #2196f3;
-  padding: 10px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
