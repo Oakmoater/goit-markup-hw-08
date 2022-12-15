@@ -16,15 +16,14 @@
             <a class="logo logo--header link" href="./index.html"><span class="logo_text">Web</span>Studio</a>
             <nav>
                 <ul class="header_nav">
-                    <li class="header_list list"><a class="header_link link"
-                            href="./index.html">Студія</a></li>
+                    <li class="header_list list"><a class="header_link link" href="./index.html">Студія</a></li>
                     <li class="header_list list"><a class="header_link header_link--akcent link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="header_list list"><a class="header_link link" href="">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="header-contakts">
                 <li class="header-contakts_item list">
-                    <a class="header-contakts_link link" href="mailto:info@devstudio.com">
+                    <a class="header-contakts_link header-contakts_link--mail link" href="mailto:info@devstudio.com">
                         <svg class="header-contakts_logo" width="16" height="12">
                             <use href="./images/svg-sprite.svg#envelope"></use>
                         </svg>
@@ -32,7 +31,7 @@
                     </a>
                 </li>
                 <li class="header-contakts_item list">
-                    <a class="header-contakts_link link" href="tel:+380961111111">
+                    <a class="header-contakts_link header-contakts_link--number link" href="tel:+380961111111">
                         <svg class="header-contakts_logo" width="10" height="16">
                             <use href="./images/svg-sprite.svg#smartphone"></use>
                         </svg>
@@ -40,6 +39,11 @@
                     </a>
                 </li>
             </ul>
+            <button class="menu_open-btn" type="button" data-menu-open>
+                <svg width="40" height="40">
+                    <use href="./images/svg-sprite.svg#menu_open"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -240,5 +244,44 @@
             </form>
         </div>
     </footer>
+    <!-- мобільне меню -->
+    <div class="menu is-hidden menu-container js-menu-container" id="site-menu" data-menu>
+        <button class="menu_close-btn" type="button" data-menu-close>
+            <svg width="40" height="40">
+                <use href="./images/svg-sprite.svg#menu_close"></use>
+            </svg>
+        </button>
+        <ul class="menu-nav">
+            <li class="menu-nav_item list"><a class="menu-nav_link link"
+                    href="./index.html">Студія</a></li>
+            <li class="menu-nav_item list"><a class="menu-nav_link menu-nav_link--akcent link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="menu-nav_item list"><a class="menu-nav_link link" href="">Контакти</a></li>
+        </ul>
+        <div class="menu-box">
+            <ul class="menu-contacts">
+                <li class="menu-contacts_item list">
+                    <a class="menu-contacts_tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="menu-contacts_item list">
+                    <a class="menu-contacts_mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="menu-socials">
+                <li class="menu-socials_item list">
+                    <a class="menu-socials_link link menu-socials_link--left" href="">Instagram</a>
+                </li>
+                <li class="menu-socials_item list">
+                    <a class="menu-socials_link link" href="">Twitter</a>
+                </li>
+                <li class="menu-socials_item list">
+                    <a class="menu-socials_link link" href="">Facebook</a>
+                </li>
+                <li class="menu-socials_item list">
+                    <a class="menu-socials_link link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

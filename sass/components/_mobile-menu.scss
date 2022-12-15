@@ -1,0 +1,98 @@
+// мобільне меню
+.menu{
+    &-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 48px 40px;
+        background: #fff;
+    }
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+    &_close-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    &-nav_item {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+    }
+    &-nav_link {
+        color: #212121;
+        &--akcent {
+            outline: 0;
+            color: #2196f3;
+        }
+    }
+    &-contacts{
+        &_item {
+            color: var(--text-color-primary);
+            &:not(:first-child) {
+                margin-top: 32px;
+            }
+        }
+        &_tel {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.1764705882;
+            letter-spacing: .02em;
+            color: #2196f3;
+            @media screen and (max-width: 379px) {
+                font-size: 24px;
+            }
+        }
+        &_mailto {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.1666666667;
+            letter-spacing: .02em;
+            color: inherit;
+        }
+    }
+    &-socials{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        margin-top: 64px;
+
+        &_item:not(:first-child){
+            border-left: 1px solid rgba(33, 33, 33, 0.2);
+        }
+        &_link{
+            color: #2196f3;
+            padding: 10px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: .02em;
+        }
+    }
+}
