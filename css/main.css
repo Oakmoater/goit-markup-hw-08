@@ -94,7 +94,20 @@ img {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+@media screen and (width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (width: 768x) {
+  .container {
+    max-width: 768px;
+  }
 }
 
 .logo--header {
@@ -269,10 +282,17 @@ img {
   font-weight: 900;
   color: var(--akcent-text-color);
   text-transform: uppercase;
-  max-width: 360px;
   margin: 0 auto;
+  max-width: 360px;
   font-size: 26px;
   line-height: 1.6;
+}
+@media screen and (min-width: 1200px) {
+  .hero_title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 .hero_button {
   margin-top: 30px;
@@ -305,15 +325,28 @@ img {
 @media screen and (min-width: 768px) {
   .feature_list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .feature_item {
+    max-width: 450px;
+  }
+  .feature_item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .feature_item {
-    width: 354px;
+    max-width: 354px;
   }
 }
-.feature_item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .feature_item {
+    max-width: 270px;
+  }
 }
 .feature_body {
   background-color: var(--btn-color);
@@ -395,10 +428,20 @@ img {
   line-height: 1.14;
   color: var(--text-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .team_list {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 }
 .team_item {

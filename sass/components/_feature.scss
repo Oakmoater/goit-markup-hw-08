@@ -2,19 +2,28 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width: 768px) {
-        &_list {
+    &_list {
+        @media screen and (min-width: 768px) {
             display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
         }
     }
 
     &_item {
-        @media screen and (min-width: 768px) {
-            width: 354px;
+        @media screen and (max-width: 767px){
+            max-width: 450px;
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
         }
-    }
-    &_item:not(:last-child){
-        margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
+        }
     }
 
     &_body {
@@ -31,7 +40,6 @@
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--text-color);
-// mobile version
         text-align: center;
     }
     &_desc {
