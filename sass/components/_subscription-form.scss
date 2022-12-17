@@ -12,6 +12,13 @@
         color: var(--akcent-text-color);
         margin-bottom: 20px;
     }
+    &_thumb {
+        @media screen and (min-width: 1200px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     &_input {
         display: inline-block;
         height: 50px;
@@ -22,10 +29,15 @@
         background: #2F303A;
         color: var(--akcent-text-color);
         transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        margin-bottom: 20px;
         width: 100%;
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
         @media screen and (min-width: 480px){
             width: 450px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 358px;
         }
     }
     &_input:hover,
@@ -53,6 +65,9 @@
         @media screen and (max-width: 1199px){
             margin-left: auto;
             margin-right: auto;
+        }
+        @media screen and (min-width: 1200px){
+            margin-left: 20px;
         }
     }
     &_button:hover,
