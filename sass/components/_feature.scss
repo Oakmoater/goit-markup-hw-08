@@ -1,7 +1,6 @@
 .feature {
     padding-top: 60px;
     padding-bottom: 60px;
-
     &_list {
         @media screen and (min-width: 768px) {
             display: flex;
@@ -10,9 +9,8 @@
             justify-content: center;
         }
     }
-
     &_item {
-        @media screen and (max-width: 767px){
+        @media screen and (max-width: 767px) {
             max-width: 450px;
             &:not(:last-child){
                 margin-bottom: 30px;
@@ -25,7 +23,6 @@
             max-width: 270px;
         }
     }
-
     &_body {
         background-color: var(--btn-color);
         border-radius: 4px;
