@@ -1,7 +1,7 @@
-// мобільне меню
 .menu{
     &-container {
         position: fixed;
+        overflow-y: scroll;
         top: 0;
         left: 0;
         width: 100vw;
@@ -83,7 +83,6 @@
         flex-wrap: wrap;
         row-gap: 10px;
         margin-top: 64px;
-
         &_item{
             padding: 10px;
             &:not(:first-child){

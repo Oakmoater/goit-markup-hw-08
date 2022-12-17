@@ -4,29 +4,27 @@
     padding-bottom: 94px;
 
     &_title {
-        // 
         font-size: 28px;
         line-height: 1.14;
-        // 
         color: var(--text-color);
         margin-bottom: 50px;
-
         @media screen and (max-width: 1199px) {
             margin-bottom: 15px;
         }
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.16;
+        }
     }
-
     &_list {
         margin: -15px;
         display: inline-flex;
         flex-wrap: wrap;
-    }
-    
+    }    
     &_item {
         height: 92px;
         color: var(--logos-color);
         margin: 15px;
-        
         @media screen and (max-width: 767px) {
             width: calc((100% - 30px * 2) / 2);
         }
