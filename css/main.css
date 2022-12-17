@@ -824,7 +824,6 @@ img {
 
 .backdrop {
   position: fixed;
-  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -841,7 +840,6 @@ img {
 
 .modal {
   position: absolute;
-  overflow-y: scroll;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -853,6 +851,11 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    overflow-y: scroll;
+  }
 }
 
 .modal-close-btn {
@@ -1112,13 +1115,26 @@ img {
 }
 
 .portpholio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portpholio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .filter {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 15px;
+  }
 }
 
 .filter_item:not(:first-child) {
@@ -1146,15 +1162,31 @@ img {
 }
 
 .project {
-  margin-top: 50px;
-  box-sizing: content-box;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    margin-top: 50px;
+  }
 }
 
-.project_item {
-  flex-basis: calc((100% - 60px) / 3);
+@media screen and (max-width: 767.98px) {
+  .project_item:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project_item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .project_link {

@@ -1,10 +1,19 @@
 .portpholio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .filter {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 767px){
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        row-gap: 15px;
+    }
 }
 .filter_item:not(:first-child) {
     margin-left: 8px;
@@ -29,14 +38,26 @@
 }
 
 .project {
-    margin-top: 50px;
-    box-sizing: content-box;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    margin-top: 40px;
+    @media screen and (min-width: 768px){
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
 }
 .project_item {
-    flex-basis: calc((100% - 60px) / 3);
+    @media screen and (max-width: 767.98px){
+        &:not(:first-child){
+            margin-top: 30px;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .project_link {
