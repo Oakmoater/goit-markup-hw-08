@@ -21,7 +21,7 @@ ul {
 body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    color: var(--text-color-primary);
+    color: $text-color-primary;
     margin: 0;
 }
 body.menu_open{

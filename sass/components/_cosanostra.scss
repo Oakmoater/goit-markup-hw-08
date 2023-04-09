@@ -9,7 +9,7 @@
     &_title {
         font-size: 36px;
         line-height: 1.16;
-        color: var(--text-color);
+        color: $text-color;
         margin-bottom: 50px;
     }
     &_list {
@@ -37,6 +37,6 @@
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--akcent-text-color);
+        color: $akcent-text-color;
     }
 }

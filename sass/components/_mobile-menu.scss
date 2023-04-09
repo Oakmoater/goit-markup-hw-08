@@ -29,7 +29,7 @@
         outline: none;
         cursor: pointer;
         &:hover, &:focus{
-            fill: var(--akcent-btn-color);
+            fill: $akcent-btn-color;
         }
     }
     &-nav_item {
@@ -51,7 +51,7 @@
     }
     &-contacts{
         &_item {
-            color: var(--text-color-primary);
+            color: $text-color-primary;
             &:not(:first-child) {
                 margin-top: 32px;
             }

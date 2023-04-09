@@ -1,5 +1,5 @@
 .hero {
-    background-color: var(--hero-bg);
+    background-color: $hero-bg;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,7 +54,7 @@
     &_title {
         font-family: "Roboto", sans-serif;
         font-weight: 900;
-        color: var(--akcent-text-color);
+        color: $akcent-text-color;
         text-transform: uppercase;
         margin: 0 auto;
         max-width: 360px;
@@ -72,8 +72,8 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
-        color: var(--akcent-text-color);
-        background-color: var(--akcent-color);
+        color: $akcent-text-color;
+        background-color: $akcent-color;
         cursor: pointer;
         border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -88,6 +88,6 @@
     }
     &_button:hover,
     &_button:focus {
-        background-color: var(--akcent-btn-color);
+        background-color: $akcent-btn-color;
     }
 }
